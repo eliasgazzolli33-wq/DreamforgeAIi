@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamForge</title>
+  <style>
+    body {
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      background: linear-gradient(90deg, #00c3ff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <h1>DreamForge</h1>
+  <p>Construindo o futuro, um sonho de cada vez.</p>
+</body>
+</html>
