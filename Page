@@ -1,8 +1,0 @@
-export default function Produtos() {
-  return (
-    <main style={{ textAlign: 'center', fontFamily: 'Arial', marginTop: '50px' }}>
-      <h1>🛒 Nossos Produtos</h1>
-      <p>Aqui você encontra os melhores produtos digitais da DreamForge AI!</p>
-    </main>
-  );
-}
