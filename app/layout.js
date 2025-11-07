@@ -1,7 +1,6 @@
-
 export const metadata = {
   title: "Dreamforge AI",
-  description: "Sua plataforma de IA poderosa e simples",
+  description: "Sua plataforma de IA poderosa"
 };
 
 export default function RootLayout({ children }) {
@@ -12,7 +11,7 @@ export default function RootLayout({ children }) {
           margin: 0,
           fontFamily: "Arial, sans-serif",
           backgroundColor: "#0d0d0d",
-          color: "#ffffff",
+          color: "#ffffff"
         }}
       >
         {children}
