@@ -3,7 +3,7 @@ export default function Home() {
     <main
       style={{
         padding: "40px",
-        textAlign: "center",
+        textAlign: "center"
       }}
     >
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>
@@ -11,7 +11,7 @@ export default function Home() {
       </h1>
 
       <p style={{ fontSize: "20px" }}>
-        Bem-vindo à sua plataforma de IA. Estamos construindo algo incrível!
+        Bem-vindo à sua plataforma de Inteligência Artificial!
       </p>
     </main>
   );
