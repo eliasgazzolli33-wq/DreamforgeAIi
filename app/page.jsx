@@ -1,12 +1,15 @@
-export default function Home() {
-  return (
-    <div style={{ padding: 40, fontFamily: 'sans-serif' }}>
-      <h1 style={{ fontSize: 32, fontWeight: 'bold' }}>
-        DreamForge — Digital Products
-      </h1>
-      <p style={{ marginTop: 20, fontSize: 18 }}>
-        Welcome to our store — products coming soon.
-      </p>
-    </div>
-  );
-}
+<a
+  href="/product"
+  style={{
+    display: 'inline-block',
+    padding: '12px 24px',
+    background: 'white',
+    color: 'black',
+    borderRadius: '6px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    marginTop: '20px'
+  }}
+>
+  Explore Our Tools
+</a>
