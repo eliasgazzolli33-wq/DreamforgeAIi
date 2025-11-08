@@ -1,18 +1,16 @@
-import { getProduct } from '../../../lib/products';
-import BotaoComprar from '../../components/BotaoComprar';
-
 export default function ProductPage({ params }) {
-  const product = getProduct(params.id);
-  if (!product) return <div>Product not found</div>;
-
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold">{product.name}</h1>
-      <img src={product.image} alt={product.name} className="w-full max-w-md mt-4" />
-      <p className="mt-4 text-gray-300">{product.short}</p>
-      <div className="mt-6">
-        <BotaoComprar id={product.id} name={product.name} price={product.price} />
-      </div>
-    </div>
+    <main style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100vh",
+      fontFamily: "sans-serif",
+      background: "#f5f5f5"
+    }}>
+      <h1>🛍️ Produto ID: {params.id}</h1>
+      <p>Página de produto funcionando!</p>
+    </main>
   );
 }
