@@ -6,11 +6,11 @@ export default function HomePage() {
       </h1>
 
       <p style={{ marginTop: 20, fontSize: 18 }}>
-        Plataforma de produtos digitais inteligentes — impulsione seu negócio com IA.
+        Ferramentas digitais que impulsionam o futuro dos negócios.
       </p>
 
       <a
-        href="/produto/1"
+        href="/product/1"
         style={{
           display: 'inline-block',
           marginTop: 40,
