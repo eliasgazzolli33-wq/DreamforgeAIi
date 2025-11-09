@@ -1,4 +1,9 @@
 {
+  "type": "module",
+  "name": "dreamforgeai",
+  "version": "1.0.0",
+  ...
+{
   "name": "dreamforge-ai",
   "version": "1.0.0",
   "private": true,
