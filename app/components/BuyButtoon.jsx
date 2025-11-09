@@ -1,11 +1,9 @@
-"use client"
+"use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function BuyButton({ productId, label = "Buy Now" }) {
   const [qty, setQty] = useState(1);
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
 
   async function handleBuy() {
     setLoading(true);
@@ -16,11 +14,9 @@ export default function BuyButton({ productId, label = "Buy Now" }) {
         body: JSON.stringify({ productId, quantity: qty })
       });
       const data = await res.json();
-      if (data.url) {
-        // redirect to Stripe Checkout
-        window.location.href = data.url;
-      } else {
-        alert("Error creating checkout.");
+      if (data.url) window.location.href = data.url;
+      else {
+        alert("Error creating checkout");
         console.error(data);
       }
     } catch (err) {
@@ -33,9 +29,9 @@ export default function BuyButton({ productId, label = "Buy Now" }) {
 
   return (
     <div>
-      <div style={{ marginBottom: 8 }}>
-        <label style={{marginRight:8}}>Quantity</label>
-        <select value={qty} onChange={(e) => setQty(Number(e.target.value))}>
+      <div style={{marginBottom:8}}>
+        <label style={{marginRight:8}}>Qty</label>
+        <select value={qty} onChange={(e)=>setQty(Number(e.target.value))}>
           <option value={1}>1</option>
           <option value={2}>2</option>
           <option value={3}>3</option>
@@ -44,14 +40,14 @@ export default function BuyButton({ productId, label = "Buy Now" }) {
 
       <button onClick={handleBuy} disabled={loading}
         style={{
-          padding: "12px 20px",
-          background: "#0b1220",
-          color: "#fff",
-          borderRadius: 8,
-          fontWeight: 700
+          padding:"10px 18px",
+          background:"#0b1220",
+          color:"#fff",
+          borderRadius:8,
+          fontWeight:700
         }}>
-        {loading ? "Processing..." : `${label}`}
+        {loading ? "Processing..." : label}
       </button>
     </div>
-  );
+  )
 }
