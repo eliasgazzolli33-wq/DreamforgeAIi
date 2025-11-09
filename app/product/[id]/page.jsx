@@ -1,9 +1,11 @@
 export default function ProductPage({ params }) {
+  const { id } = params;
   return (
     <div style={{ padding: 40, fontFamily: 'sans-serif' }}>
       <h1 style={{ fontSize: 28, fontWeight: 'bold' }}>
-        Produto {params.id}
+        Produto {id}
       </h1>
+      ...
 
       <p style={{ marginTop: 20, fontSize: 18 }}>
         A ferramenta digital que impulsiona sua produtividade.
